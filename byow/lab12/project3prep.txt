@@ -1,0 +1,30 @@
+Q: Can you think of an analogy between the process of tesselating hexagons and randomly generating a world using rooms and hallways? 
+What is the hexagon and what is the tesselation on the Project 3 side?
+
+A: Each hexagon is a room and each edge between two hexagons is a hallway between two rooms. 
+
+-----
+Q: If you were to start working on world generation, what kind of method would you think of writing first? 
+Think back to the lab and the process used to eventually get to tesselating hexagons.
+
+A: Generate world then rooms then organize rooms and hallways. 
+
+-----
+Q: What distinguishes a hallway from a room? How are they similar?
+
+A: A hallway has walls 1 empty space apart. 
+
+-----
+Q: For tesselating hexagons, one of the hardest parts is figuring out where to place each hexagon/how to easily place hexagons on screen in an algorithmic way. 
+After looking at your own implemention, consider the implementation provided near the end of the lab. 
+How did your implementation differ from the given one? What lessons can be learned from it?
+
+A: The distinction between placement points was different from the given implementation this lead to a different way to generate the hexagons. Lessons to be learned
+is that adding a little complexity can create useful abstractions. Also we stored the x and y coordinates directly, while the given implementation used a position class.
+
+-----
+Q: Consider an algorithm for placing rooms and hallways on your map. 
+Ideally, consider many algorithms and think about what makes some easier or harder to implement. Try and bring those ideas together into a single simple algorithm which accomplishes the task. 
+In general, algorithms with as few edge cases as possible are better algorithms.
+
+A: Step 1: Generate random world with rooms and hallways. Step 2: Render world. 
